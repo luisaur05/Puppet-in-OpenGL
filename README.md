@@ -1,45 +1,40 @@
-# Proyecto Marioneta 3D con Cubos en OpenGL
+# 3D Puppet Project with Cubes in OpenGL
 
-Este proyecto consiste en la implementación de una marioneta 3D compuesta de cubos, con movimientos en sus articulaciones mediante el uso de cinemática directa. La escena incluye una cámara que permite rotar alrededor de la figura para observar sus movimientos desde diferentes ángulos.
+This project implements a 3D puppet made of cubes, with joint movements using forward kinematics. The scene includes a camera that can rotate around the figure, allowing observation of its movements from different angles.
 
-## Requisitos
+## Requirements
 
-Para ejecutar el proyecto, necesitas tener instalados los siguientes programas y librerías:
+To run the project, you need the following programs and libraries installed:
 
-- **OpenGL**: Renderizar gráficos 2D y 3D.
-- **GLFW**: manejar ventanas y entradas del usuario.
-- **GLEW**: Manejar extensiones de OpenGL.
-- **GLM**: Operaciones de álgebra lineal (matrices y vectores) en gráficos.
-- **ImGui**: interfaces graficas de usuario.
+- **OpenGL**: For rendering 2D and 3D graphics.
+- **GLFW**: For managing windows and user input.
+- **GLEW**: For handling OpenGL extensions.
+- **GLM**: For linear algebra operations (matrices and vectors) in graphics.
+- **ImGui**: For creating graphical user interfaces.
 
-Hay que asegurarse  que las bibliotecas estén correctamente vinculadas en tu entorno de desarrollo antes de compilar el proyecto.
+Make sure the libraries are correctly linked in your development environment before compiling the project.
 
-### Instrucciones de Instalación
+### Installation Instructions
 
-1. **Instalar las dependencias**:
-   - Se trabajo cn Windows  descargando las versiones de GLFW, GLEW, GLM e ImGui desde sus sitios oficiales y configurando las propiedades del  entorno de desarrollo.
+1. **Install dependencies**:
+   - On Windows, download the appropriate versions of GLFW, GLEW, GLM, and ImGui from their official websites and configure them in your development environment.
 
-
-2. **Compilar el proyecto**:
-   Podemos compilar el proyecto completo con las librerias en Visual Studio o en el caso de que estés usando `g++`, el comando para compilar:
+2. **Compile the project**:
+   You can compile the entire project with the libraries using Visual Studio, or if you're using `g++`, run the following command:
    ```bash
-   g++ main.cpp Camera.cpp -o Marioneta3D -lglfw -lGLEW -lGL -DIMGUI_IMPL_OPENGL_LOADER_GLEW
-3. **Ejecutar el proyecto**:
-   Después de compilar se ejecuta el archivo generado y se muestra en pantalla la marioneta a la cual podemos mover con los controles y ademas controlar una camara para una mejro apresiacion con los controles ya mencionados.
- 
- 
+   g++ main.cpp Camera.cpp -o Puppet3D -lglfw -lGLEW -lGL -DIMGUI_IMPL_OPENGL_LOADER_GLEW
+3. **Run the project**:
+   After compiling, execute the generated file to display the puppet on screen. The puppet can be moved using the controls, and the camera can also be adjusted for better observation using the mentioned controls.
 
-## Controles
+## Controls
 
-### Movimiento de la cámara:
-- **W/A/S/D**: Mover la cámara alrededor de la marioneta.
-- **Q/E**: Rotar la cámara en sentido antihorario y horario respectivamente.
-- **R/F**: Rotar la cámara hacia arriba y abajo.
+### Camera Movement:
+- **W/A/S/D**: Move the camera around the puppet.
+- **Q/E**: Rotate the camera counterclockwise and clockwise, respectively.
+- **R/F**: Rotate the camera upward and downward.
 
-### Control de las articulaciones:
-Se implementa una interfaz gráfica mediante **ImGui** que permite ajustar los ángulos de las articulaciones principales de la marioneta como hombros, codos, tobillos, entre otros.
+### Joint Control:
+A graphical interface implemented with **ImGui** allows you to adjust the angles of the puppet's main joints, such as shoulders, elbows, ankles, and others.
 
-
-
-
-Demo video: https://youtu.be/sySXCzEik4Y
+## Demo Video
+[https://youtu.be/sySXCzEik4Y](https://youtu.be/sySXCzEik4Y)
